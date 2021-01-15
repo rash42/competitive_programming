@@ -1,4 +1,7 @@
-/*#include<bits/stdc++.h>
+/*
+problem link: https://codeforces.com/contest/1472/problem/A
+*/
+#include<bits/stdc++.h>
 using namespace std;
 using ll=long long;
 
@@ -20,40 +23,4 @@ int main(){
         if(c>=n)cout<<"YES\n";
         else cout<<"NO\n";
     }
-}*/
-
-#include<bits/stdc++.h>
-using namespace std;
-
-int minTries(int w,int h){
-    int count=1,cnt=1;
-    while((w%2) !=1){
-        w=w/2;
-        count*=2;
-    }
-    while((h%2) !=1){
-        h=h/2;
-        count*=2;
-    }
-    return count;
-}
-int main(){
-    int a,b,r,t,w,h,n;
-    cin>>t;
-    for(a=0;a<t;a++){
-        cin>>w>>h>>n;
-        if(n==1){
-            cout<<"YES"<<"\n";
-            continue;
-        }
-
-        if(n<=minTries(w,h)){
-                cout<<"YES"<<"\n";
-            }
-        else {
-            cout<<"NO"<<"\n";
-        }
-    }
-    return 0;
-
 }

@@ -1,3 +1,6 @@
+/*
+problem link: https://codeforces.com/contest/1472/problem/D
+*/
 #include<bits/stdc++.h>
 using namespace std;
 using ll=long long;
